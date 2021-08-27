@@ -1,0 +1,59 @@
+title : su - icing
+name: 'icing@tomato:~$'
+description: 'Simple, light weight, responsive jekyll theme for hackers'
+
+markdown: kramdown
+highlighter: rouge
+javascript_enabled: true
+
+featured_posts_title: Unrelated
+featured_posts:
+  - url: '#'
+    title: 'Featured post #1'
+  - url: '#'
+    title: 'Featured post #2'
+  - url: '#'
+    title: 'Featured post #3'
+
+collections:
+  networking:
+    title: Networking
+    default_open: true
+    output: true
+  embedded:
+    title: Embedded
+    default_open: false
+    output: true
+  language:
+    title: Language
+    default_open: false
+    output: true
+  programme:
+    title: Programme
+    default_open: false
+    output: true
+
+defaults:
+  - scope:
+      type: networking
+    values:
+      title: Networking
+      permalink: /posts/networking/:title
+  - scope:
+      type: embedded
+    values:
+      title: Embedded
+      permalink: /posts/embedded/:title
+  - scope:
+      type: language
+    values:
+      title: Language
+      permalink: /posts/language/:title
+  - scope:
+      type: programme
+    values:
+      title: Programme
+      permalink: /posts/programme/:title
+
+plugins:
+  - jekyll-sitemap
