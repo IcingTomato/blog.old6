@@ -7,7 +7,12 @@ tags:
 
 这篇文章将会详细描述如何部署RHCSA/RHCE(基于RHel 8)环境，以及解决AMD CPU出现的kvm/qemu虚拟机无法正常启动的问题。
 
-# 安装VMWare Workstation 16
+![](http://icing.fun/img/post/2021/08/21/vmware_logo_white_transparent.png)
+![](http://icing.fun/img/post/2021/08/21/esxi.png)
+
+![](http://icing.fun/img/post/2021/08/21/vmware_logo_loader.gif)
+
+# 安装VMware Workstation 16
 
 安装过程省略，注意安装“增强型键盘驱动程序”。
 
@@ -200,3 +205,22 @@ EOF
 
 ![](http://icing.fun/img/post/2021/08/21/45.jpg)
 
+# CSA 环境 Probing EDD (edd=off to disable)... ok 错误解决方案
+
+![](http://icing.fun/img/post/2021/08/21/46.jpg)
+
+首先在 QEMU/KVM 里面强制关闭虚拟机：
+
+![](http://icing.fun/img/post/2021/08/21/47.jpg)
+
+开机：
+
+![](http://icing.fun/img/post/2021/08/21/48.jpg)
+
+在出现引导界面的时候按下 `e` 进行编辑：
+
+![](http://icing.fun/img/post/2021/08/21/49.jpg)
+
+在 `linux` 行最末添加 `edd=off` ，按 `Ctrl+X` 启动虚拟机。
+
+![](http://icing.fun/img/post/2021/08/21/50.jpg)
