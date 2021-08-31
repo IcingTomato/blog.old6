@@ -13,7 +13,7 @@ tags:
 
 ![tcp](http://icing.fun/img/post/2017/10/02/tcp.jpg)
 
-![tcp_states](http://icing.fun/img/post/2017/10/02/tcp_states.jpg)
+![tcp_states](http://icing.fun/img/post/2017/10/02/tcp_states.png)
 
 要弄清 TCP 建立连接需要几次交互才行，我们需要弄清建立连接进行初始化的目标是什么。TCP 进行握手初始化一个连接的目标是：分配资源、初始化序列号(通知 peer 对端我的初始序列号是多少)，知道初始化连接的目标，那么要达成这个目标的过程就简单了，握手过程可以简化为下面的四次交互：
 

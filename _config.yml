@@ -7,9 +7,13 @@ highlighter: rouge
 javascript_enabled: true
 
 collections:
+  linux:
+    title: Linux
+    default_open: true
+    output: true
   networking:
     title: Networking
-    default_open: true
+    default_open: false
     output: true
   embedded:
     title: Embedded
@@ -25,6 +29,11 @@ collections:
     output: true
 
 defaults:
+  - scope:
+      type: linux
+    values:
+      title: Linux
+      permalink: /posts/linux/:title
   - scope:
       type: networking
     values:

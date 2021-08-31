@@ -2,7 +2,7 @@
 layout: post
 title:  "Plan of Jekyll Blog - Episode 2: Ruby-3, Jekyll-4, Git, Ubuntu and Nginx"
 tags: 
-- networking
+- linux
 ---
 
 This tutorial you will learn how to configure Jekyll-4 on Ubuntu 16.04/18.04.

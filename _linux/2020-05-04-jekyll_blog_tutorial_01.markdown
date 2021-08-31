@@ -2,7 +2,7 @@
 layout: post
 title:  "Plan of Jekyll Blog - Episode 1: Jekyll-3 on Ubuntu and Nginx"
 tags: 
-- networking
+- linux
 ---
 
 This tutorial you will learn how to configure Jekyll-3 on Ubuntu 16.04 and Nginx.

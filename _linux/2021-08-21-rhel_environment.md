@@ -2,7 +2,7 @@
 layout: post
 title:  "Deploy the Red Hat Certification Environment"
 tags: 
-- networking
+- linux
 ---
 
 这篇文章将会详细描述如何部署RHCSA/RHCE(基于RHel 8)环境，以及解决AMD CPU出现的kvm/qemu虚拟机无法正常启动的问题。
