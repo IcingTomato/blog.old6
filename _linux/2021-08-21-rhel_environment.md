@@ -205,6 +205,16 @@ EOF
 
 ![](http://icing.fun/img/post/2021/08/21/45.jpg)
 
+# 开启 Podman 容器环境
+
+在 `workstation` 中，输入：
+
+```shell
+lab containers-services start
+```
+
+![](http://icing.fun/img/post/2021/08/21/51.jpg)
+
 # CSA 环境 Probing EDD (edd=off to disable)... ok 错误解决方案
 
 ![](http://icing.fun/img/post/2021/08/21/46.jpg)
